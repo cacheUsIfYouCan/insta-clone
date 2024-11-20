@@ -58,6 +58,10 @@
     color: #ed4956; /* Instagram red for like */
 }
 
+button.save-button {
+    margin-left: auto;
+}
+
 .comment-button {
     color: #262626; /* Black comment icon */
 }
