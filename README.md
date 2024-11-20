@@ -113,7 +113,6 @@ All branches should follow these prefix conventions:
 4. Create Pull Request
 5. Code review and approval
 6. Merge to `develop`
-7. Delete branch after merge
 
 ## 📝 License
 
