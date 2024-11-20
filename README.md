@@ -50,13 +50,70 @@ The application will be available at `http://localhost:3000`
 
 - [React](https://reactjs.org/) - Frontend framework
 
-## 🤝 Contributing
+## 🌳 Branching Strategy
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Our project follows a structured branching strategy to maintain organization and clarity in our development workflow.
+
+### Main Branches
+
+- `main` - Production branch containing stable releases
+- `develop` - Main development branch where features are integrated
+
+### Branch Naming Convention
+
+All branches should follow these prefix conventions:
+
+| Prefix | Purpose | Example |
+|--------|---------|---------|
+| `feature/` | New features | `feature/photo-filters` |
+| `bugfix/` | Bug fixes | `bugfix/login-validation` |
+| `hotfix/` | Urgent production fixes | `hotfix/server-crash` |
+| `release/` | Release preparation | `release/v1.2.0` |
+| `docs/` | Documentation updates | `docs/api-guide` |
+
+### Branch Workflow
+
+1. **Feature Development**
+   ```bash
+   # Create a new feature branch
+   git checkout develop
+   git checkout -b feature/new-feature
+   
+   # After development is complete
+   git pull origin develop
+   git checkout develop
+   git merge feature/new-feature
+   ```
+
+2. **Bug Fixes**
+   ```bash
+   # Create a bug fix branch
+   git checkout develop
+   git checkout -b bugfix/issue-description
+   ```
+
+3. **Hotfixes**
+   ```bash
+   # Create a hotfix branch from main
+   git checkout main
+   git checkout -b hotfix/critical-fix
+   
+   # After fixing, merge to both main and develop
+   git checkout main
+   git merge hotfix/critical-fix
+   git checkout develop
+   git merge hotfix/critical-fix
+   ```
+
+### Branch Lifecycle
+
+1. Create branch from `develop`
+2. Develop and commit changes
+3. Push branch to remote
+4. Create Pull Request
+5. Code review and approval
+6. Merge to `develop`
+7. Delete branch after merge
 
 ## 📝 License
 
