@@ -77,7 +77,7 @@ All branches should follow these prefix conventions:
    ```bash
    # Create a new feature branch
    git checkout develop
-   git checkout -b feature/new-feature
+   git checkout -b feature/new-feature-#
    
    # After development is complete
    git pull origin develop
