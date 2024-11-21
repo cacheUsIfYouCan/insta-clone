@@ -17,6 +17,7 @@ class InstagramPost extends Component {
            postImgURL: props.postImgURL,
            userImgURL: props.userImgURL,
            comments: props.comments,
+           shares: props.shares,
            newComment: ''
         };
     }
