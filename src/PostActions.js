@@ -14,6 +14,10 @@ class PostActions extends Component {
             <button className="comment-button">
                 <i className="far fa-comment"></i>
             </button>
+            <button className="share-button">
+                <i className="far fa-paper-plane"></i>
+            </button>
+            <p>{this.props.shares > 0 ? this.props.shares : null}</p>
             <button onClick={this.props.toggleSave} className="save-button">
                 <i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i>
             </button>

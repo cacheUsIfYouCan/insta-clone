@@ -45,7 +45,7 @@
     gap: 20px;
 }
 
-.like-button, .comment-button, .save-button {
+.like-button, .comment-button, .share-button, .save-button {
     background: none;
     border: none;
     cursor: pointer;
@@ -61,13 +61,13 @@
 button.save-button {
     margin-left: auto;
 }
-
-.comment-button {
+.share-button {
     color: #262626; /* Black comment icon */
 }
 
 .like-button:hover,
 .comment-button:hover,
+.share-button:hover,
 .save-button:hover {
     color: #999;
 }

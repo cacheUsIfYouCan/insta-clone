@@ -20,6 +20,7 @@ function App() {
           postImgURL = {post.postImgURL}
           userImgURL = {post.userImgURL}
           comments = {post.comments}
+          shares = {post.shares}
           // question here: why don't we use a semicolon to end each line?
         />
       ))}
