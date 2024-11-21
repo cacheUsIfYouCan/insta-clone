@@ -5,6 +5,7 @@ import PostActions from "./PostActions";
 import CommentSection from './CommentSection';
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
+import MeatballMenu from './meatball-menu';
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -62,6 +63,9 @@ class InstagramPost extends Component {
                     <h2>{this.state.userName}</h2>
                     <VerifiedBadge />
                     <FollowButton />
+                </div>
+                <div>
+                    <MeatballMenu />
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
