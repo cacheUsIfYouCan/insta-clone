@@ -2,9 +2,9 @@
 
 import React, {Component} from 'react';
 import PostActions from "./PostActions";
-import CommentSection from './CommentSection';
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
+// import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
     constructor(props) {
