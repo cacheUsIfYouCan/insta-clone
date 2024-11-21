@@ -3,6 +3,8 @@
 import React, {Component} from 'react';
 import PostActions from "./PostActions";
 import CommentSection from './CommentSection';
+import FollowButton from './FollowButton'
+import VerifiedBadge from './VerifiedBadge'
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -58,6 +60,8 @@ class InstagramPost extends Component {
                     <img src={`./images/user/${this.state.userImgURL}`} alt="User Profile" className="profile-pic" />
                     {/* Task 5: Make the <h2> below dynamically reference the dummy user name. */}
                     <h2>{this.state.userName}</h2>
+                    <VerifiedBadge />
+                    <FollowButton />
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
