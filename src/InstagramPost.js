@@ -79,7 +79,8 @@ class InstagramPost extends Component {
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
                     <p><strong>{this.state.userName}</strong>{this.state.caption}</p>
                 </div>
-                <div className="comments-section">
+                {/* Commented out entire Comment Section on the main post (Tickets  #15 & #13*/}
+                {/* <div className="comments-section">
                     <CommentSection
                         // Task 9: Pass down the necessary data and handlers used by the CommentSection component
                         comments={this.state.comments}
@@ -87,7 +88,7 @@ class InstagramPost extends Component {
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
-                </div>
+                </div> */}
             </div>
         );
     }
