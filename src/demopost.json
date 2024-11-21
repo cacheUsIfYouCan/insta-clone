@@ -539,9 +539,10 @@
         "isVerified": false,
         "timestamp": "11/20/2024 08:15:22",
         "comments": [
-            {"text": "Couldn't agree more!", "likes": 3},
-            {"text": "This is everything.", "likes": 5}
-        ]
+            "Couldn't agree more!",
+            "This is everything."
+        ],
+        "commentLikes": [3, 5]
     },
     {
         "following": false,
