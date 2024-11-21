@@ -7,7 +7,7 @@ class PostActions extends Component {
     render() {
         return (
         <>
-            <button onClick={this.props.onLike} className="like-button">
+            <button onClick={this.props.onLike} className={this.props.liked ? "liked" : "like-button"}>
                 <i className={this.props.liked ? 'fas fa-heart' : 'far fa-heart'}></i>
             </button>
             <p>{this.props.totalLikes}</p>
