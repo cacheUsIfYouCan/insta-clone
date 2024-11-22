@@ -37,6 +37,10 @@ function App() {
         <Post 
           // Task 2: Pass down the data of each JSON object to this child component.
           key = {index}
+          following = {post.following}
+          location = {post.location}
+          shares = {post.shares}
+          totalComments = {post.totalComments}
           liked = {post.liked}
           saved = {post.saved}
           totalLikes = {post.totalLikes}
@@ -44,7 +48,11 @@ function App() {
           userName = {post.userName}
           postImgURL = {post.postImgURL}
           userImgURL = {post.userImgURL}
+          isUser = {post.isUser}
+          isVerified = {post.isVerified}
+          timestamp = {post.timestamp}
           comments = {post.comments}
+          commentLikes = {post.commentLikes}
           shares = {post.shares}
           totalComments = {post.totalComments}
           isVerified = {post.isVerified}
