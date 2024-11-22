@@ -5,11 +5,11 @@ class MeatballMenu extends Component {
     render() {
         return (
             <div className="meatball container">
-                <div className="block one"><p>Saved</p></div>
+                <div className="block one"><p><i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i> Saved</p></div>
                 <div className="block two"><p>QR Code</p></div>
                 <div className="block three"><p>We're moving things around.</p></div>
                 <div className="block four">
-                    <div><p>Add to favorites</p></div>
+                    <p>Add to favorites</p>
                     <div><p>Unfollow</p></div>
                 </div>
                 <div className="block five">

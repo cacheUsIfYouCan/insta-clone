@@ -64,9 +64,6 @@ class InstagramPost extends Component {
                     <VerifiedBadge />
                     <FollowButton />
                 </div>
-                <div>
-                    <MeatballMenu />
-                </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
                 <div className="post-actions">
@@ -91,6 +88,9 @@ class InstagramPost extends Component {
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
+                <div>
+                    <MeatballMenu />
+                </div>
                 </div>
             </div>
         );
