@@ -59,9 +59,9 @@ class InstagramPost extends Component {
 
     renderCaption = () => {
         const { caption, userName, isCaptionExpanded } = this.state;
-        const CHARACTER_LIMIT = 25;
+        const CHARACTER_LIMIT = 50;
         const shouldTruncate = caption.length > CHARACTER_LIMIT && !isCaptionExpanded;
-
+    
         if (shouldTruncate) {
             return (
                 <p className="caption-text">
@@ -69,14 +69,14 @@ class InstagramPost extends Component {
                     {caption.slice(0, CHARACTER_LIMIT)}...{" "}
                     <button 
                         onClick={this.expandCaption}
-                        className="text-gray-500 hover:text-gray-700 focus:outline-none"
+                        className="more-button"
                     >
                         more
                     </button>
                 </p>
             );
         }
-
+    
         return (
             <p className="caption-text">
                 <strong>{userName}</strong>{" "}
