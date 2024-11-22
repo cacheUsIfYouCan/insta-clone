@@ -28,6 +28,8 @@ class InstagramPost extends Component {
            timestamp: props.timestamp,
            comments: props.comments,
            newComment: '',
+           totalComments: props.totalComments,
+           isVerified: props.isVerified
         };
     }
 
@@ -60,14 +62,47 @@ class InstagramPost extends Component {
         }));
     };
 
+    expandCaption = () => {
+        this.setState({ isCaptionExpanded: true });
+    };
+
+    renderCaption = () => {
+        const { caption, userName, isCaptionExpanded } = this.state;
+        const CHARACTER_LIMIT = 50;
+        const shouldTruncate = caption.length > CHARACTER_LIMIT && !isCaptionExpanded;
+    
+        if (shouldTruncate) {
+            return (
+                <p className="caption-text">
+                    <strong>{userName}</strong>{" "}
+                    {caption.slice(0, CHARACTER_LIMIT)}...{" "}
+                    <button 
+                        onClick={this.expandCaption}
+                        className="more-button"
+                    >
+                        more
+                    </button>
+                </p>
+            );
+        }
+    
+        return (
+            <p className="caption-text">
+                <strong>{userName}</strong>{" "}
+                {caption}
+            </p>
+        );
+    };
+
     render() {
+        console.log(`User ${this.state.userName} isVerified:`, this.state.isVerified);
         return (
             <div className="post">
                 <div className="post-header">
                     <img src={`./images/user/${this.state.userImgURL}`} alt="User Profile" className="profile-pic" />
                     {/* Task 5: Make the <h2> below dynamically reference the dummy user name. */}
                     <h2>{this.state.userName}</h2>
-                    <VerifiedBadge />
+                    {this.state.isVerified && <VerifiedBadge />}
                     <FollowButton />
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
@@ -86,7 +121,7 @@ class InstagramPost extends Component {
                 </div>
                 <div className="post-caption">
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
-                    <p><strong>{this.state.caption ? this.state.userName : null}</strong>{this.state.caption}</p>
+                    {this.renderCaption()}
                 </div>
                 {/* Commented out entire Comment Section on the main post (Tickets  #15 & #13*/}
                 {/* <div className="comments-section">

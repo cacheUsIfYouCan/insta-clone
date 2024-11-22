@@ -1,6 +1,6 @@
 import React from 'react'
 
-class VerificationBadge extends React.Component {
+class VerifiedBadge extends React.Component {
   render() {
     return (
       <i 
@@ -16,4 +16,4 @@ class VerificationBadge extends React.Component {
   }
 }
 
-export default VerificationBadge
+export default VerifiedBadge
