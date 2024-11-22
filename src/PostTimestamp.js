@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 
 class PostTimestamp extends Component {
     render() {
-        return
-        
+        return (
+        <p>{this.props.timestamp}</p>);
     }
 }
 
