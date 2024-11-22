@@ -2,8 +2,10 @@
 
 import React, {Component} from 'react';
 import PostActions from "./PostActions";
-import FollowButton from './FollowButton'
-import VerifiedBadge from './VerifiedBadge'
+import FollowButton from './FollowButton';
+import VerifiedBadge from './VerifiedBadge';
+import PostTimestamp from './PostTimestamp';
+
 // import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
@@ -96,6 +98,11 @@ class InstagramPost extends Component {
                         handleAddComment={this.handleAddComment}
                     />
                 </div> */}
+                <div className="timestamp-section">
+                    <PostTimestamp
+                        timestamp={this.state.timestamp}
+                    />
+                </div>
             </div>
         );
     }
