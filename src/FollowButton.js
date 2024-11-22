@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './FollowButton.css';
 
-const FollowButton = () => {
-  const [isFollowing, setIsFollowing] = useState(false);
+const FollowButton = ({ following }) => {
+  const [isFollowing, setIsFollowing] = useState(following);
 
   const handleClick = () => {
     setIsFollowing(!isFollowing);

@@ -23,6 +23,8 @@ function App() {
           shares = {post.shares}
           totalComments = {post.totalComments}
           isVerified = {post.isVerified}
+          isUser={post.isUser}
+          following={post.following}
           // question here: why don't we use a semicolon to end each line?
         />
       ))}

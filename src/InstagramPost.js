@@ -22,7 +22,9 @@ class InstagramPost extends Component {
            shares: props.shares,
            newComment: '',
            totalComments: props.totalComments,
-           isVerified: props.isVerified
+           isVerified: props.isVerified,
+           isUser: props.isUser,
+           following: props.following
         };
     }
 
@@ -96,7 +98,7 @@ class InstagramPost extends Component {
                     {/* Task 5: Make the <h2> below dynamically reference the dummy user name. */}
                     <h2>{this.state.userName}</h2>
                     {this.state.isVerified && <VerifiedBadge />}
-                    <FollowButton />
+                    {!this.state.isUser && <FollowButton following={this.state.following} />}
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
