@@ -20,7 +20,8 @@ class InstagramPost extends Component {
            userImgURL: props.userImgURL,
            comments: props.comments,
            shares: props.shares,
-           newComment: ''
+           newComment: '',
+           totalComments: props.totalComments
         };
     }
 
@@ -70,6 +71,8 @@ class InstagramPost extends Component {
                         totalLikes={this.state.totalLikes} 
                         liked={this.state.liked}
                         saved={this.state.saved}
+                        totalComments={this.state.totalComments}
+                        shares={this.state.shares}
                         // Task 7: Pass down the appropriate handler callback functions the child component will need to invoke when/if things are clicked.
                         onLike={this.toggleLike}
                         toggleSave={this.toggleSave}
