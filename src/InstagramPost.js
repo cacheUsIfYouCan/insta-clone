@@ -2,9 +2,9 @@
 
 import React, {Component} from 'react';
 import PostActions from "./PostActions";
-import CommentSection from './CommentSection';
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
+// import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -20,7 +20,8 @@ class InstagramPost extends Component {
            userImgURL: props.userImgURL,
            comments: props.comments,
            shares: props.shares,
-           newComment: ''
+           newComment: '',
+           totalComments: props.totalComments
         };
     }
 
@@ -102,6 +103,8 @@ class InstagramPost extends Component {
                         totalLikes={this.state.totalLikes} 
                         liked={this.state.liked}
                         saved={this.state.saved}
+                        totalComments={this.state.totalComments}
+                        shares={this.state.shares}
                         // Task 7: Pass down the appropriate handler callback functions the child component will need to invoke when/if things are clicked.
                         onLike={this.toggleLike}
                         toggleSave={this.toggleSave}
@@ -111,7 +114,8 @@ class InstagramPost extends Component {
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
                     {this.renderCaption()}
                 </div>
-                <div className="comments-section">
+                {/* Commented out entire Comment Section on the main post (Tickets  #15 & #13*/}
+                {/* <div className="comments-section">
                     <CommentSection
                         // Task 9: Pass down the necessary data and handlers used by the CommentSection component
                         comments={this.state.comments}
@@ -119,7 +123,7 @@ class InstagramPost extends Component {
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
-                </div>
+                </div> */}
             </div>
         );
     }
