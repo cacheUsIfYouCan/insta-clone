@@ -227,7 +227,7 @@
         "userName": "handyAndy",
         "postImgURL": "andy-jj.jpeg",
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Denver, CO",
         "shares": 678,
         "totalComments": 4,
@@ -340,7 +340,7 @@
         "userName": "handyAndy",
         "postImgURL": ["foxy-5.jpeg", "foxy-3.jpeg"],
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Chicago, IL",
         "shares": 234,
         "totalComments": 2,
@@ -387,7 +387,7 @@
         "userName": "handyAndy",
         "postImgURL": "old-jeep.jpeg",
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Chicago, IL",
         "shares": 456,
         "totalComments": 4,
@@ -495,7 +495,7 @@
         "userName": "handyAndy",
         "postImgURL": ["jj-pumpkin-patch.jpeg", "kev-birthday.jpeg", "kev-sidehat.jpeg"],
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Nashville, TN",
         "shares": 345,
         "totalComments": 3,
@@ -561,7 +561,7 @@
         "commentImgURL": ["dwayne.jpeg", "christina.jpeg", "bey.jpeg", "bill.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Miami, FL",
         "shares": 23,
         "totalComments": 2,
@@ -575,10 +575,7 @@
         "isUser": false,
         "isVerified": false,
         "timestamp": "11/20/2024 08:15:22",
-        "comments": [
-            "Couldn't agree more!",
-            "This is everything."
-        ],
+        "comments": ["Couldn't agree more!", "This is everything."],
         "commentLikes": [3, 5],
         "commentUsers": ["goldencharm", "midnightflair217"],
         "commentImgURL": ["betty.jpeg", "morris.jpeg"]
@@ -650,7 +647,7 @@
         "commentImgURL": ["bill.jpeg", "betty.jpeg", "dwayne.jpeg", "morris.jpeg", "angie.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Phoenix, AZ",
         "shares": 45,
         "totalComments": 2,
@@ -748,7 +745,7 @@
         "commentImgURL": ["bey.jpeg", "bill.jpeg", "chris.jpeg", "betty.jpeg", "morris.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "New Orleans, LA",
         "shares": 56,
         "totalComments": 2,
@@ -821,7 +818,7 @@
         "commentImgURL": ["bill.jpeg", "chris.jpeg", "christina.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Traverse City, MI",
         "shares": 67,
         "totalComments": 3,
@@ -895,7 +892,7 @@
         "commentImgURL": ["dwayne.jpeg", "chris.jpeg", "bey.jpeg", "betty.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Anchorage, AK",
         "shares": 234,
         "totalComments": 2,
@@ -942,7 +939,7 @@
         "commentImgURL": ["christina.jpeg", "bill.jpeg", "dwayne.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Helena, MT",
         "shares": 2345,
         "totalComments": 4,
@@ -991,7 +988,7 @@
         "commentImgURL": ["angie.jpeg", "christina.jpeg", "bill.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Cheyenne, WY",
         "shares": 89,
         "totalComments": 2,
