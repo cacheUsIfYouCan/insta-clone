@@ -13,7 +13,11 @@
 
 .meatball p {
     font-size: 1.2rem;
-    margin-left: 20px;
+    margin-left: 25px;
+}
+
+.meatball i {
+    margin-right: 15px;;
 }
 
 .meatball .block.one {
@@ -34,5 +38,8 @@
 
 .meatball .block.five {
     grid-column: 1 / 3;
+}
 
+.meatball .block.five div:last-child {
+    color: red;
 }
