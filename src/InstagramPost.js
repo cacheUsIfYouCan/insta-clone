@@ -6,6 +6,7 @@ import CommentSection from './CommentSection';
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
 import MeatballMenu from './meatball-menu';
+import Ellipsis from './ellipsis';
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -21,7 +22,8 @@ class InstagramPost extends Component {
            userImgURL: props.userImgURL,
            comments: props.comments,
            shares: props.shares,
-           newComment: ''
+           newComment: '',
+           isMeatballOpen: false,
         };
     }
 
@@ -54,6 +56,14 @@ class InstagramPost extends Component {
         }));
     };
 
+    openMeatball = () => {
+        this.setState({isMeatballOpen: true});
+    }
+
+    closeMeatball = () => {
+        this.setState({isMeatballOpen: false})
+    }
+
     render() {
         return (
             <div className="post">
@@ -63,7 +73,7 @@ class InstagramPost extends Component {
                     <h2>{this.state.userName}</h2>
                     <VerifiedBadge />
                     <FollowButton />
-                    <i className="fa-solid fa-ellipsis"></i>
+                    <Ellipsis openMeatball={this.openMeatball}/>
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
@@ -90,7 +100,7 @@ class InstagramPost extends Component {
                         handleAddComment={this.handleAddComment}
                     />
                 <div>
-                    <MeatballMenu />
+                    <MeatballMenu isMeatballOpen={this.state.isMeatballOpen} closeMeatball={this.closeMeatball}/>
                 </div>
                 </div>
             </div>

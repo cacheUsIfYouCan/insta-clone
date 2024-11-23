@@ -1,9 +1,5 @@
 .meatball.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    grid-auto-rows: 80px, auto;
-    margin: 50px 10px;
+    display: none;
 }
 
 .meatball .block {
@@ -42,4 +38,12 @@
 
 .meatball .block.five div:last-child {
     color: red;
+}
+
+.show-meatball {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-auto-rows: 80px, auto;
+    margin: 50px 10px;
 }
