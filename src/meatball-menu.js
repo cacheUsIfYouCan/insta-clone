@@ -5,6 +5,7 @@ class MeatballMenu extends Component {
     render() {
         return (
             <div className={`meatball container ${this.props.isModalOpen ? 'show-meatball' : ''}`}>
+                <div className="closeMeatball"><button onClick={this.props.closeMeatball}><i class="fa-solid fa-angle-down"></i></button></div>
                 <div className="block one"><p><i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i> Saved</p></div>
                 <div className="block two"><p><i className="fas fa-qrcode"></i> QR Code</p></div>
                 <div className="block three"><p><i className="far fa-paper-plane"></i>We're moving things around</p></div>
