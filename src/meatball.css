@@ -15,12 +15,14 @@
     top: 30%;
     left: 0;
     padding-top: 10px;
+    padding-bottom: 85px;
 }
 
 .meatball .block {
     background-color: #F3F4F6;
     border-radius: 15px;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .meatball p {
@@ -40,10 +42,12 @@
 
 .meatball .block.one {
     grid-column: 1 / 2;
+    margin-right: 0;
 }
 
 .meatball .block.two {
     grid-column: 2 / 3;
+    margin-left: 0;
 }
 
 .meatball .block.three {
