@@ -1,9 +1,22 @@
 import React, {Component} from 'react' 
-
+import ShareDrawer from './ShareDrawer';
 // Refer to the module pattern we reviewed several times in class today and debug the error of this component.
 
 class PostActions extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isShareDrawerOpen: false
+        };
+    }
     
+
+    toggleShareDrawer = () => {
+        this.setState(prevState => ({
+            isShareDrawerOpen: !prevState.isShareDrawerOpen
+        }));
+    }
+
     render() {
 
         let formattedLikes;
@@ -66,29 +79,32 @@ class PostActions extends Component {
             formattedShares = `${sliceShares}M`;
         }
         
-
         return (
-        <>
-            <button onClick={this.props.onLike} className={this.props.liked ? "liked" : "like-button"}>
-                <i className={this.props.liked ? 'fas fa-heart' : 'far fa-heart'}></i>
-            </button>
-            <p>{formattedLikes}</p>
-            <button className="comment-button">
-                <i className="far fa-comment"></i>
-            </button>
-            <p>{formattedComments}</p>
-            <button className="share-button">
-                <i className="far fa-paper-plane"></i>
-            </button>
-            <p>{formattedShares}</p>
-            <button onClick={this.props.toggleSave} className="save-button">
-                <i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i>
-            </button>
-        </>   
+            <>
+                <button onClick={this.props.onLike} className={this.props.liked ? "liked" : "like-button"}>
+                    <i className={this.props.liked ? 'fas fa-heart' : 'far fa-heart'}></i>
+                </button>
+                <p>{formattedLikes}</p>
+                <button className="comment-button">
+                    <i className="far fa-comment"></i>
+                </button>
+                <p>{formattedComments}</p>
+                <button className="share-button" onClick={this.toggleShareDrawer}>
+                    <i className="far fa-paper-plane"></i>
+                </button>
+                <p>{formattedShares}</p>
+                <button onClick={this.props.toggleSave} className="save-button">
+                    <i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i>
+                </button>
+
+                <ShareDrawer 
+                    isOpen={this.state.isShareDrawerOpen}
+                    onClose={this.toggleShareDrawer}
+                />
+            </>
         );
     }
 }
 
 export default PostActions;
-
 
