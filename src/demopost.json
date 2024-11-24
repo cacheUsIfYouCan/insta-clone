@@ -952,7 +952,7 @@
         "userImgURL": "andy.png",
         "isUser": false,
         "isVerified": false,
-        "timestamp": "11/19/2024 13:15:45",
+        "timestamp": "11/19/2023 13:15:45",
         "comments": [
             "Cat debuggers are the best debuggers!",
             "Mine likes to sit on my keyboard too!",
@@ -1055,7 +1055,7 @@
             "You're making me crave these right now! Off to the store I go!"
         ],
         "commentLikes": [237, 184, 125],
-        "commentUsers": ["goldencharm", "captain-him", "midnightflair217"],
-        "commentImgURL": ["betty.jpeg", "chris.jpeg", "morris.jpeg"]
+        "commentUsers": ["goldencharm", "officialNerds", "midnightflair217"],
+        "commentImgURL": ["betty.jpeg", "nerds.jpeg", "morris.jpeg"]
     }
 ]
