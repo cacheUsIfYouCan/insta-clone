@@ -1,29 +1,35 @@
 // Task 3: Import the necessary component modules and/or libraries using the variables referenced below.
-
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import PostActions from "./PostActions";
-import CommentSection from './CommentSection';
-import FollowButton from './FollowButton'
-import VerifiedBadge from './VerifiedBadge'
+import FollowButton from './FollowButton';
+import VerifiedBadge from './VerifiedBadge';
+import PostTimestamp from './PostTimestamp';
 import MeatballMenu from './meatball-menu';
 import Ellipsis from './ellipsis';
+// import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
     constructor(props) {
         super(props);
+        // Task 4: Declare local state keys and assign them the value correlating to the props parameter of the constructor. For example, potato: props.potato
         this.state = {
-           // Task 4: Declare local state keys and assign them the value correlating to the props parameter of the constructor. For example, potato: props.potato
-           liked: props.liked,
-           saved: props.saved,
-           totalLikes: props.totalLikes,
-           caption: props.caption,
-           userName: props.userName,
-           postImgURL: props.postImgURL,
-           userImgURL: props.userImgURL,
-           comments: props.comments,
-           shares: props.shares,
-           newComment: '',
-           isMeatballOpen: false,
+            following: props.following,
+            shares: props.shares,
+            totalComments: props.totalComments,
+            liked: props.liked,
+            saved: props.saved,
+            totalLikes: props.totalLikes,
+            caption: props.caption,
+            userName: props.userName,
+            postImgURL: props.postImgURL,
+            userImgURL: props.userImgURL,
+            isUser: props.isUser,
+            isVerified: props.isVerified,
+            timestamp: props.timestamp,
+            comments: props.comments,
+            newComment: '',
+            isMeatballOpen: false,
+            isCaptionExpanded: false
         };
     }
 
@@ -40,7 +46,6 @@ class InstagramPost extends Component {
         }));
     };
     
-
     toggleSave = () => {
         this.setState((prevState) => ({ saved: !prevState.saved }));
     };
@@ -58,55 +63,109 @@ class InstagramPost extends Component {
 
     openMeatball = () => {
         this.setState({isMeatballOpen: true});
-    }
+    };
 
     closeMeatball = () => {
-        this.setState({isMeatballOpen: false})
-    }
+        this.setState({isMeatballOpen: false});
+    };
+
+    expandCaption = () => {
+        this.setState({ isCaptionExpanded: true });
+    };
+
+    renderCaption = () => {
+        const { caption, userName, isCaptionExpanded } = this.state;
+        const CHARACTER_LIMIT = 50;
+        const shouldTruncate = caption.length > CHARACTER_LIMIT && !isCaptionExpanded;
+    
+        if (shouldTruncate) {
+            return (
+                <p className="caption-text">
+                    <strong>{userName}</strong>{" "}
+                    {caption.slice(0, CHARACTER_LIMIT)}...{" "}
+                    <button 
+                        onClick={this.expandCaption}
+                        className="more-button"
+                    >
+                        more
+                    </button>
+                </p>
+            );
+        }
+    
+        return (
+            <p className="caption-text">
+                <strong>{userName}</strong>{" "}
+                {caption}
+            </p>
+        );
+    };
 
     render() {
+        console.log(`User ${this.state.userName} isVerified:`, this.state.isVerified);
         return (
             <div className="post">
                 <div className="post-header">
-                    <img src={`./images/user/${this.state.userImgURL}`} alt="User Profile" className="profile-pic" />
+                    <img
+                        src={`./images/user/${this.state.userImgURL}`}
+                        alt="User Profile"
+                        className="profile-pic"
+                    />
                     {/* Task 5: Make the <h2> below dynamically reference the dummy user name. */}
                     <h2>{this.state.userName}</h2>
-                    <VerifiedBadge />
-                    <FollowButton />
-                    <Ellipsis openMeatball={this.openMeatball}/>
+                    {this.state.isVerified && <VerifiedBadge />}
+                    {!this.state.isUser && (
+                        <FollowButton
+                            following={this.props.following}
+                            onFollowToggle={this.props.onFollowToggle}
+                        />
+                    )}
+                    <Ellipsis openMeatball={this.openMeatball} />
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
-                <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image"/>
+                <img 
+                    src={`./images/post/${this.state.postImgURL}`} 
+                    alt="Post Image" 
+                    className="post-image"
+                />
                 <div className="post-actions">
-                    <PostActions 
-                        totalLikes={this.state.totalLikes} 
+                    {/* Task 7: Pass down the appropriate handler callback functions the child component will need to invoke when/if things are clicked. */}
+                    <PostActions
+                        totalLikes={this.state.totalLikes}
                         liked={this.state.liked}
                         saved={this.state.saved}
-                        // Task 7: Pass down the appropriate handler callback functions the child component will need to invoke when/if things are clicked.
+                        totalComments={this.state.totalComments}
+                        shares={this.state.shares}
                         onLike={this.toggleLike}
                         toggleSave={this.toggleSave}
-                    /> 
+                    />
                 </div>
                 <div className="post-caption">
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
-                    <p><strong>{this.state.userName}</strong>{this.state.caption}</p>
+                    {this.renderCaption()}
                 </div>
-                <div className="comments-section">
+                {/* Commented out entire Comment Section on the main post (Tickets #15 & #13) */}
+                {/* Task 9: Pass down the necessary data and handlers used by the CommentSection component */}
+                {/* <div className="comments-section">
                     <CommentSection
-                        // Task 9: Pass down the necessary data and handlers used by the CommentSection component
                         comments={this.state.comments}
                         newComment={this.state.newComment}
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
-                <div>
-                    <MeatballMenu isMeatballOpen={this.state.isMeatballOpen} closeMeatball={this.closeMeatball}/>
+                </div> */}
+                <div className="timestamp-section">
+                    <PostTimestamp
+                        timestamp={this.state.timestamp}
+                    />
                 </div>
-                </div>
+                <MeatballMenu 
+                    isMeatballOpen={this.state.isMeatballOpen}
+                    closeMeatball={this.closeMeatball}
+                />
             </div>
         );
     }
 }
-
 
 export default InstagramPost;

@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import './FollowButton.css';
 
-const FollowButton = () => {
-  const [isFollowing, setIsFollowing] = useState(false);
-
-  const handleClick = () => {
-    setIsFollowing(!isFollowing);
-  };
-
+const FollowButton = ({ following, onFollowToggle }) => {
   return (
     <button 
-      className={`follow-button ${isFollowing ? 'following' : ''}`}
-      onClick={handleClick}
+      className={`follow-button ${following ? 'following' : ''}`}
+      onClick={onFollowToggle}
     >
-      {isFollowing ? 'Following' : 'Follow'}
+      {following ? 'Following' : 'Follow'}
     </button>
   );
 };

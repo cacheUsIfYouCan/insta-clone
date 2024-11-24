@@ -15,7 +15,9 @@
         "isVerified": false,
         "timestamp": "11/20/2024 14:23:45",
         "comments": ["Looking ready for some water fun! That's a great life jacket brand.", "Safe and stylish! Perfect combo for lake days."],
-        "commentLikes": [45, 32]
+        "commentLikes": [45, 32],
+        "commentUsers": ["honeyhive", "thee-science-guy"],
+        "commentImgURL": ["bey.jpeg", "bill.jpeg"]
     },
     {
         "liked": false,
@@ -33,7 +35,9 @@
         "isVerified": false,
         "timestamp": "11/15/2024 09:45:12",
         "comments": ["What a precious puppy! Those eyes are melting my heart!", "Ace is the perfect name for this cutie! Congratulations on your new fur baby!"],
-        "commentLikes": [34, 28]
+        "commentLikes": [34, 28],
+        "commentUsers": ["goldencharm", "ChristmasCrunch"],
+        "commentImgURL": ["betty.jpeg", "christina.jpeg"]
     },
     {
         "liked": false,
@@ -51,7 +55,9 @@
         "isVerified": false,
         "timestamp": "11/18/2024 08:15:30",
         "comments": ["This is hilarious! Your pets should start their own history channel!", "The purr-fect recreation of the pyramids! 😹"],
-        "commentLikes": [87, 65]
+        "commentLikes": [87, 65],
+        "commentUsers": ["midnightflair217", "queenmother"],
+        "commentImgURL": ["morris.jpeg", "angie.jpeg"]
     },
     {
         "liked": false,
@@ -69,7 +75,9 @@
         "isVerified": false,
         "timestamp": "11/19/2024 18:30:00",
         "comments": ["Croatia has been on my bucket list! The coastline looks incredible!", "Those Croatian waters are unlike anything else in the world! 😍"],
-        "commentLikes": [28, 22]
+        "commentLikes": [28, 22],
+        "commentUsers": ["captain-him", "rock-n-hard-place"],
+        "commentImgURL": ["chris.jpeg", "dwayne.jpeg"]
     },
     {
         "liked": false,
@@ -87,7 +95,9 @@
         "isVerified": false,
         "timestamp": "11/17/2024 12:45:22",
         "comments": ["That cable management is so satisfying! What monitor mount are you using?", "Love the minimalist vibes! Perfect workspace for crushing code."],
-        "commentLikes": [56, 42]
+        "commentLikes": [56, 42],
+        "commentUsers": ["thee-science-guy", "honeyhive"],
+        "commentImgURL": ["bill.jpeg", "bey.jpeg"]
     },
     {
         "liked": false,
@@ -105,7 +115,9 @@
         "isVerified": false,
         "timestamp": "11/16/2024 15:20:18",
         "comments": ["He's hired! Most professional pup I've ever seen! 🐾", "That tie really brings out his eyes! Executive pupper material!"],
-        "commentLikes": [68, 52]
+        "commentLikes": [68, 52],
+        "commentUsers": ["ChristmasCrunch", "midnightflair217"],
+        "commentImgURL": ["christina.jpeg", "morris.jpeg"]
     },
     {
         "liked": false,
@@ -123,7 +135,9 @@
         "isVerified": false,
         "timestamp": "11/14/2024 11:10:55",
         "comments": ["Otis is such a handsome boy! Those ears are adorable!", "The happiest dog I've seen today! Give him extra pets from me!"],
-        "commentLikes": [34, 28]
+        "commentLikes": [34, 28],
+        "commentUsers": ["queenmother", "goldencharm"],
+        "commentImgURL": ["angie.jpeg", "betty.jpeg"]
     },
     {
         "liked": false,
@@ -141,7 +155,9 @@
         "isVerified": false,
         "timestamp": "08/15/2023 16:40:33",
         "comments": ["Kitty! Put that thing back where it came from or so help me! 😂", "Boo would be proud! Still one of the best movies ever!"],
-        "commentLikes": [58, 45]
+        "commentLikes": [58, 45],
+        "commentUsers": ["rock-n-hard-place", "captain-him"],
+        "commentImgURL": ["dwayne.jpeg", "chris.jpeg"]
     },
     {
         "liked": false,
@@ -159,7 +175,9 @@
         "isVerified": false,
         "timestamp": "11/19/2024 13:25:44",
         "comments": ["Congratulations! You two are perfect together! When's the big day? 🎊", "The ring is gorgeous! So happy for you both! 💕"],
-        "commentLikes": [82, 65]
+        "commentLikes": [82, 65],
+        "commentUsers": ["honeyhive", "goldencharm"],
+        "commentImgURL": ["bey.jpeg", "betty.jpeg"]
     },
     {
         "liked": false,
@@ -177,7 +195,9 @@
         "isVerified": false,
         "timestamp": "11/20/2024 10:05:15",
         "comments": ["The colors in Moab are unreal! Which arch is this?", "Utah's national parks are pure magic! Great capture!"],
-        "commentLikes": [125, 98]
+        "commentLikes": [125, 98],
+        "commentUsers": ["thee-science-guy", "ChristmasCrunch"],
+        "commentImgURL": ["bill.jpeg", "christina.jpeg"]
     },
     {
         "liked": false,
@@ -192,14 +212,12 @@
         "shares": 342,
         "totalComments": 3,
         "isUser": false,
-        "comments": [
-            "Love this Forrest Gump reference! You always bring the best vibes ✨",
-            "This caption speaks to my soul! Keep spreading joy",
-            "You're such an inspiration! 💫"
-        ],
+        "comments": ["Love this Forrest Gump reference! You always bring the best vibes ✨", "This caption speaks to my soul! Keep spreading joy", "You're such an inspiration! 💫"],
         "commentLikes": [445, 267, 189],
         "timestamp": "11/19/2024 08:15:22",
-        "isVerified": true
+        "isVerified": true,
+        "commentUsers": ["midnightflair217", "queenmother", "rock-n-hard-place"],
+        "commentImgURL": ["morris.jpeg", "angie.jpeg", "dwayne.jpeg"]
     },
     {
         "liked": false,
@@ -209,20 +227,17 @@
         "userName": "handyAndy",
         "postImgURL": "andy-jj.jpeg",
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Denver, CO",
         "shares": 678,
         "totalComments": 4,
         "isUser": false,
-        "comments": [
-            "So adorable!",
-            "OMG",
-            "This is exactly what I want",
-            "Perfection! ✨"
-        ],
+        "comments": ["So adorable!", "OMG", "This is exactly what I want", "Perfection! ✨"],
         "commentLikes": [234, 189, 167, 145],
         "timestamp": "11/17/2024 14:20:15",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["captain-him", "honeyhive", "goldencharm", "thee-science-guy"],
+        "commentImgURL": ["chris.jpeg", "bey.jpeg", "betty.jpeg", "bill.jpeg"]
     },
     {
         "liked": false,
@@ -237,16 +252,12 @@
         "shares": 89567,
         "totalComments": 5,
         "isUser": false,
-        "comments": [
-            "This is exactly what I needed to hear today! 💫",
-            "You always know how to inspire us!",
-            "Love the Toy Story reference! Keep spreading positivity",
-            "Your posts always motivate me to do better",
-            "This energy is everything! 🚀"
-        ],
+        "comments": ["This is exactly what I needed to hear today! 💫", "You always know how to inspire us!", "Love the Toy Story reference! Keep spreading positivity", "Your posts always motivate me to do better", "This energy is everything! 🚀"],
         "commentLikes": [12345, 9876, 7654, 5432, 3210],
         "timestamp": "11/16/2024 11:30:45",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["ChristmasCrunch", "midnightflair217", "queenmother", "rock-n-hard-place", "captain-him"],
+        "commentImgURL": ["christina.jpeg", "morris.jpeg", "angie.jpeg", "dwayne.jpeg", "chris.jpeg"]
     },
     {
         "liked": false,
@@ -268,7 +279,9 @@
         ],
         "commentLikes": [234, 156, 123],
         "timestamp": "11/15/2024 16:25:18",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["honeyhive", "midnightflair217", "captain-him"],
+        "commentImgURL": ["bey.jpeg", "morris.jpeg", "chris.jpeg"]
     },
     {
         "liked": false,
@@ -291,7 +304,9 @@
         ],
         "commentLikes": [45, 23, 67, 34],
         "timestamp": "11/15/2024 16:45:33",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["goldencharm", "queenmother", "thee-science-guy", "ChristmasCrunch"],
+        "commentImgURL": ["betty.jpeg", "angie.jpeg", "bill.jpeg", "christina.jpeg"]
     },
     {
         "liked": false,
@@ -313,7 +328,9 @@
         ],
         "commentLikes": [234, 167, 89],
         "timestamp": "11/17/2024 11:20:15",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["rock-n-hard-place", "honeyhive", "midnightflair217"],
+        "commentImgURL": ["dwayne.jpeg", "bey.jpeg", "morris.jpeg"]
     },
     {
         "liked": false,
@@ -323,7 +340,7 @@
         "userName": "handyAndy",
         "postImgURL": ["foxy-5.jpeg", "foxy-3.jpeg"],
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Chicago, IL",
         "shares": 234,
         "totalComments": 2,
@@ -334,7 +351,9 @@
         ],
         "commentLikes": [145, 78],
         "timestamp": "11/16/2024 08:45:50",
-        "isVerified": false
+        "isVerified": false,
+        "commentUsers": ["captain-him", "goldencharm"],
+        "commentImgURL": ["chris.jpeg", "betty.jpeg"]
     },
     {
         "liked": false,
@@ -355,6 +374,8 @@
             "Living vicariously through your adventures!"
         ],
         "commentLikes": [876, 654, 432],
+        "commentUsers": ["goldencharm", "midnightflair217", "ChristmasCrunch"],
+        "commentImgURL": ["betty.jpeg", "morris.jpeg", "christina.jpeg"],
         "timestamp": "11/11/2024 16:20:15",
         "isVerified": false
     },
@@ -366,7 +387,7 @@
         "userName": "handyAndy",
         "postImgURL": "old-jeep.jpeg",
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Chicago, IL",
         "shares": 456,
         "totalComments": 4,
@@ -378,6 +399,8 @@
             "The Wizard of Oz reference 👌✨"
         ],
         "commentLikes": [567, 345, 234, 123],
+        "commentUsers": ["captain-him", "thee-science-guy", "honeyhive", "queenmother"],
+        "commentImgURL": ["chris.jpeg", "bill.jpeg", "bey.jpeg", "angie.jpeg"],
         "timestamp": "11/10/2024 13:10:55",
         "isVerified": false
     },
@@ -399,6 +422,8 @@
             "So pretty!"
         ],
         "commentLikes": [345, 123],
+        "commentUsers": ["rock-n-hard-place", "midnightflair217"],
+        "commentImgURL": ["dwayne.jpeg", "morris.jpeg"],
         "timestamp": "11/09/2024 10:15:22",
         "isVerified": true
     },
@@ -417,6 +442,8 @@
         "isUser": false,
         "comments": ["Perfect!", "Looking good ✨", "Great shot"],
         "commentLikes": [23, 12, 8],
+        "commentUsers": ["honeyhive", "ChristmasCrunch", "thee-science-guy"],
+        "commentImgURL": ["bey.jpeg", "christina.jpeg", "bill.jpeg"],
         "timestamp": "11/08/2024 15:45:33",
         "isVerified": false
     },
@@ -435,6 +462,8 @@
         "isUser": false,
         "comments": ["Goals!", "Amazing vibes", "Love this energy", "Perfect moment ✨"],
         "commentLikes": [456, 234, 189, 123],
+        "commentUsers": ["goldencharm", "captain-him", "queenmother", "midnightflair217"],
+        "commentImgURL": ["betty.jpeg", "chris.jpeg", "angie.jpeg", "morris.jpeg"],
         "timestamp": "11/07/2024 12:30:45",
         "isVerified": false
     },
@@ -453,6 +482,8 @@
         "isUser": false,
         "comments": ["The lighting in this shot is absolutely perfect!", "Such a peaceful vibe, love how you captured this moment"],
         "commentLikes": [15, 8],
+        "commentUsers": ["rock-n-hard-place", "ChristmasCrunch"],
+        "commentImgURL": ["dwayne.jpeg", "christina.jpeg"],
         "timestamp": "11/06/2024 09:20:15",
         "isVerified": false
     },
@@ -464,7 +495,7 @@
         "userName": "handyAndy",
         "postImgURL": ["jj-pumpkin-patch.jpeg", "kev-birthday.jpeg", "kev-sidehat.jpeg"],
         "userImgURL": "andy.png",
-        "following": false,
+        "following": true,
         "location": "Nashville, TN",
         "shares": 345,
         "totalComments": 3,
@@ -475,6 +506,8 @@
             "That hat is definitely your style Kev! 🧢✨"
         ],
         "commentLikes": [234, 156, 89],
+        "commentUsers": ["honeyhive", "thee-science-guy", "goldencharm"],
+        "commentImgURL": ["bey.jpeg", "bill.jpeg", "betty.jpeg"],
         "timestamp": "11/05/2024 14:55:30",
         "isVerified": false
     },
@@ -498,7 +531,9 @@
             "This is absolutely stunning. Can't wait to see more!",
             "This is pure magic ✨"
         ],
-        "commentLikes": [234, 89, 167]
+        "commentLikes": [234, 89, 167],
+        "commentUsers": ["captain-him", "midnightflair217", "queenmother"],
+        "commentImgURL": ["chris.jpeg", "morris.jpeg", "angie.jpeg"]
     },
     {
         "following": false,
@@ -521,31 +556,12 @@
             "They look so happy with their weekend sitter!",
             "The dynamic duo strikes again! Best furry friends ever 🐾"
         ],
-        "commentLikes": [1234, 678, 445, 89]
+        "commentLikes": [1234, 678, 445, 89],
+        "commentUsers": ["rock-n-hard-place", "ChristmasCrunch", "honeyhive", "thee-science-guy"],
+        "commentImgURL": ["dwayne.jpeg", "christina.jpeg", "bey.jpeg", "bill.jpeg"]
     },
     {
-        "following": false,
-        "location": "Miami, FL",
-        "shares": 23,
-        "totalComments": 2,
-        "liked": false,
-        "saved": false,
-        "totalLikes": 15,
-        "caption": "Sometimes the best memories are made in the most unexpected moments.",
-        "userName": "handyAndy",
-        "postImgURL": "keely-jj.jpeg",
-        "userImgURL": "andy.png",
-        "isUser": false,
-        "isVerified": false,
-        "timestamp": "11/20/2024 08:15:22",
-        "comments": [
-            "Couldn't agree more!",
-            "This is everything."
-        ],
-        "commentLikes": [3, 5]
-    },
-    {
-        "following": false,
+        "following": true,
         "location": "Miami, FL",
         "shares": 23,
         "totalComments": 2,
@@ -560,7 +576,9 @@
         "isVerified": false,
         "timestamp": "11/20/2024 08:15:22",
         "comments": ["Couldn't agree more!", "This is everything."],
-        "commentLikes": [3, 5]
+        "commentLikes": [3, 5],
+        "commentUsers": ["goldencharm", "midnightflair217"],
+        "commentImgURL": ["betty.jpeg", "morris.jpeg"]
     },
     {
         "following": false,
@@ -578,7 +596,9 @@
         "isVerified": true,
         "timestamp": "11/17/2024 13:45:00",
         "comments": ["Always speaking truth!", "You inspire me daily.", "Keep spreading this energy!"],
-        "commentLikes": [456, 234, 567]
+        "commentLikes": [456, 234, 567],
+        "commentUsers": ["captain-him", "queenmother", "ChristmasCrunch"],
+        "commentImgURL": ["chris.jpeg", "angie.jpeg", "christina.jpeg"]
     },
     {
         "following": false,
@@ -596,7 +616,9 @@
         "isVerified": false,
         "timestamp": "10/15/2023 11:30:45",
         "comments": ["Champagne is life!"],
-        "commentLikes": [12]
+        "commentLikes": [12],
+        "commentUsers": ["honeyhive"],
+        "commentImgURL": ["bey.jpeg"]
     },
     {
         "following": false,
@@ -620,10 +642,12 @@
             "Your authenticity shines through every post.",
             "Thank you for always keeping it real!"
         ],
-        "commentLikes": [23456, 12345, 8901, 7654, 6789]
+        "commentLikes": [23456, 12345, 8901, 7654, 6789],
+        "commentUsers": ["thee-science-guy", "goldencharm", "rock-n-hard-place", "midnightflair217", "queenmother"],
+        "commentImgURL": ["bill.jpeg", "betty.jpeg", "dwayne.jpeg", "morris.jpeg", "angie.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Phoenix, AZ",
         "shares": 45,
         "totalComments": 2,
@@ -641,7 +665,9 @@
             "Oh my goodness, this is the cutest thing I've ever seen! What a little bundle of joy!",
             "This is such a perfect fall memory! So happy and cozy in there! 🥰✨"
         ],
-        "commentLikes": [34, 28]
+        "commentLikes": [34, 28],
+        "commentUsers": ["ChristmasCrunch", "honeyhive"],
+        "commentImgURL": ["christina.jpeg", "bey.jpeg"]
     },
     {
         "following": false,
@@ -663,7 +689,9 @@
             "Needed this reminder today!",
             "Taking this energy into the weekend."
         ],
-        "commentLikes": [89, 67, 45]
+        "commentLikes": [89, 67, 45],
+        "commentUsers": ["captain-him", "thee-science-guy", "goldencharm"],
+        "commentImgURL": ["chris.jpeg", "bill.jpeg", "betty.jpeg"]
     },
     {
         "following": false,
@@ -686,7 +714,9 @@
             "Keep inspiring us all!",
             "Your journey is so motivating!"
         ],
-        "commentLikes": [15678, 12345, 9876, 8765]
+        "commentLikes": [15678, 12345, 9876, 8765],
+        "commentUsers": ["midnightflair217", "queenmother", "rock-n-hard-place", "ChristmasCrunch"],
+        "commentImgURL": ["morris.jpeg", "angie.jpeg", "dwayne.jpeg", "christina.jpeg"]
     },
     {
         "following": false,
@@ -710,10 +740,12 @@
             "Living for these powerful messages!",
             "Thank you for always keeping it real!"
         ],
-        "commentLikes": [23456, 18934, 15678, 12345, 10987]
+        "commentLikes": [23456, 18934, 15678, 12345, 10987],
+        "commentUsers": ["honeyhive", "thee-science-guy", "captain-him", "goldencharm", "midnightflair217"],
+        "commentImgURL": ["bey.jpeg", "bill.jpeg", "chris.jpeg", "betty.jpeg", "morris.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "New Orleans, LA",
         "shares": 56,
         "totalComments": 2,
@@ -731,7 +763,9 @@
             "Pup-arazzi indeed! They're a total star ✨🐶",
             "Look at that sweet face! I can't handle the cuteness 😍🐾"
         ],
-        "commentLikes": [67, 45]
+        "commentLikes": [67, 45],
+        "commentUsers": ["queenmother", "ChristmasCrunch"],
+        "commentImgURL": ["angie.jpeg", "christina.jpeg"]
     },
     {
         "following": false,
@@ -755,7 +789,9 @@
             "This hit home today!",
             "Living for these words of wisdom!"
         ],
-        "commentLikes": [25678, 19876, 15432, 12345, 10987]
+        "commentLikes": [25678, 19876, 15432, 12345, 10987],
+        "commentUsers": ["goldencharm", "midnightflair217", "queenmother", "rock-n-hard-place", "honeyhive"],
+        "commentImgURL": ["betty.jpeg", "morris.jpeg", "angie.jpeg", "dwayne.jpeg", "bey.jpeg"]
     },
     {
         "following": false,
@@ -777,10 +813,12 @@
             "Coffee and code, the perfect winter combo.",
             "Keeping warm with hot coffee and cool code."
         ],
-        "commentLikes": [123, 98, 78]
+        "commentLikes": [123, 98, 78],
+        "commentUsers": ["thee-science-guy", "captain-him", "ChristmasCrunch"],
+        "commentImgURL": ["bill.jpeg", "chris.jpeg", "christina.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Traverse City, MI",
         "shares": 67,
         "totalComments": 3,
@@ -799,7 +837,9 @@
             "This is pure happiness.",
             "Such sweet faces! You're definitely outnumbered. 🥰"
         ],
-        "commentLikes": [45, 38, 29]
+        "commentLikes": [45, 38, 29],
+        "commentUsers": ["queenmother", "honeyhive", "goldencharm"],
+        "commentImgURL": ["angie.jpeg", "bey.jpeg", "betty.jpeg"]
     },
     {
         "following": false,
@@ -822,7 +862,9 @@
             "Love the energy in this post!",
             "Tech Spartans unite! 💚"
         ],
-        "commentLikes": [123, 98, 87, 76]
+        "commentLikes": [123, 98, 87, 76],
+        "commentUsers": ["captain-him", "thee-science-guy", "midnightflair217", "ChristmasCrunch"],
+        "commentImgURL": ["chris.jpeg", "bill.jpeg", "morris.jpeg", "christina.jpeg"]
     },
     {
         "following": false,
@@ -845,10 +887,12 @@
             "This perspective helps on tough days.",
             "Coding wisdom for the win!"
         ],
-        "commentLikes": [156, 123, 98, 87]
+        "commentLikes": [156, 123, 98, 87],
+        "commentUsers": ["rock-n-hard-place", "captain-him", "honeyhive", "goldencharm"],
+        "commentImgURL": ["dwayne.jpeg", "chris.jpeg", "bey.jpeg", "betty.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Anchorage, AK",
         "shares": 234,
         "totalComments": 2,
@@ -866,7 +910,9 @@
             "Dynamic duo! They look like they're planning something.",
             "They look like little models posing for a photoshoot!"
         ],
-        "commentLikes": [89, 76]
+        "commentLikes": [89, 76],
+        "commentUsers": ["midnightflair217", "queenmother"],
+        "commentImgURL": ["morris.jpeg", "angie.jpeg"]
     },
     {
         "following": false,
@@ -888,10 +934,12 @@
             "This speaks to my soul on so many levels.",
             "Simplicity is the ultimate sophistication."
         ],
-        "commentLikes": [145, 123, 98]
+        "commentLikes": [145, 123, 98],
+        "commentUsers": ["ChristmasCrunch", "thee-science-guy", "rock-n-hard-place"],
+        "commentImgURL": ["christina.jpeg", "bill.jpeg", "dwayne.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Helena, MT",
         "shares": 2345,
         "totalComments": 4,
@@ -904,14 +952,16 @@
         "userImgURL": "andy.png",
         "isUser": false,
         "isVerified": false,
-        "timestamp": "11/19/2024 13:15:45",
+        "timestamp": "11/19/2023 13:15:45",
         "comments": [
             "Cat debuggers are the best debuggers!",
             "Mine likes to sit on my keyboard too!",
             "Purr programming at its finest!",
             "The best rubber duck debugging partner!"
         ],
-        "commentLikes": [145, 123, 98, 87]
+        "commentLikes": [145, 123, 98, 87],
+        "commentUsers": ["honeyhive", "goldencharm", "captain-him", "midnightflair217"],
+        "commentImgURL": ["bey.jpeg", "betty.jpeg", "chris.jpeg", "morris.jpeg"]
     },
     {
         "following": false,
@@ -933,10 +983,12 @@
             "Debugging with doggos is the way to go.",
             "Give that good boy a treat for every bug fixed!"
         ],
-        "commentLikes": [89, 76, 65]
+        "commentLikes": [89, 76, 65],
+        "commentUsers": ["queenmother", "ChristmasCrunch", "thee-science-guy"],
+        "commentImgURL": ["angie.jpeg", "christina.jpeg", "bill.jpeg"]
     },
     {
-        "following": false,
+        "following": true,
         "location": "Cheyenne, WY",
         "shares": 89,
         "totalComments": 2,
@@ -954,7 +1006,9 @@
             "Cats really do boost productivity!",
             "The purrfect work arrangement."
         ],
-        "commentLikes": [45, 38]
+        "commentLikes": [45, 38],
+        "commentUsers": ["rock-n-hard-place", "honeyhive"],
+        "commentImgURL": ["dwayne.jpeg", "bey.jpeg"]
     },
     {
         "following": false,
@@ -976,6 +1030,32 @@
             "Nothing better than puppy encouragement!",
             "They love us even when our code doesn't work."
         ],
-        "commentLikes": [123, 98, 87]
+        "commentLikes": [123, 98, 87],
+        "commentUsers": ["goldencharm", "captain-him", "midnightflair217"],
+        "commentImgURL": ["betty.jpeg", "chris.jpeg", "morris.jpeg"]
+    },
+    {
+        "following": false,
+        "location": "Portland, OR",
+        "shares": 4123,
+        "totalComments": 3,
+        "liked": false,
+        "saved": false,
+        "totalLikes": 1456,
+        "caption": "Nerds Gummies deserve a shrine. Sweet, chewy, and crunchy all at once? A masterpiece in candy form. 🍬",
+        "userName": "dev_jessp",
+        "postImgURL": "nerds-gummies.png",
+        "userImgURL": "jess.png",
+        "isUser": false,
+        "isVerified": false,
+        "timestamp": "11/19/2024 14:45:10",
+        "comments": [
+            "Honestly, these are the GOAT of candies. Sweet + crunchy = perfect.",
+            "Obsessed is an understatement! Nerds Gummies are life.",
+            "You're making me crave these right now! Off to the store I go!"
+        ],
+        "commentLikes": [237, 184, 125],
+        "commentUsers": ["goldencharm", "officialNerds", "midnightflair217"],
+        "commentImgURL": ["betty.jpeg", "nerds.jpeg", "morris.jpeg"]
     }
 ]
