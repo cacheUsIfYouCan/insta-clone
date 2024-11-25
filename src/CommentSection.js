@@ -21,18 +21,21 @@ class CommentSection extends Component {
             </div>
             <div className="comments-section">
                 {this.props.commentImgURL.map((userImg, index) => (
-                    <img key = {index} src={`./images/user/${userImg}`} alt="Commenter user profile" className="user-pic"></img>
+                    <img key ={index} src={`./images/user/${userImg}`} alt="Commenter user profile" className="user-pic"></img>
                 ))}
                 {this.props.commentUsers.map((user, index) => (
-                    <p key={index}>{user}</p>
+                    <p key={index} className="username">{user}</p>
                 ))}
                 {this.props.comments.map((comment, index) => (
-                    <>
-                    <p key={index}>{comment}</p>
-                    <button>
-                        <i className='far fa-heart like-button'></i>
-                    </button>
-                    </>
+                    <p key={index} className="commentText">{comment}</p>
+                ))}
+                {this.props.commentLikes.map((likes, index) => (
+                    <div className="commentLikes">
+                        <button className='like-button'>
+                        <i className='far fa-heart'></i>
+                        </button>
+                        <p key={index}>{likes}</p>
+                    </div>
                 ))}
             </div>
             <div className="add-comment">
