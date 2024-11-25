@@ -7,7 +7,6 @@ import CommentSection from './CommentSection';
 import PostTimestamp from './PostTimestamp';
 import MeatballMenu from './meatball-menu';
 import Ellipsis from './ellipsis';
-// import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -28,6 +27,9 @@ class InstagramPost extends Component {
             isVerified: props.isVerified,
             timestamp: props.timestamp,
             comments: props.comments,
+            commentLikes: props.commentLikes,
+            commentUsers: props.commentUsers,
+            commentImgURL: props.commentImgURL,
             newComment: '',
             isMeatballOpen: false,
             isCaptionExpanded: false
@@ -156,8 +158,8 @@ class InstagramPost extends Component {
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
-                </div>
                 </div> */}
+                {/* </div> */}
                 <div className="timestamp-section">
                     <PostTimestamp
                         timestamp={this.state.timestamp}

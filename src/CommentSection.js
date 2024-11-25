@@ -5,7 +5,8 @@ class CommentSection extends Component {
 
     render() {
         return (
-        <div className="comment-drawer">
+        <div className={`comments-drawer ${this.props.isCommentsOpen ? 'show-comments' : ''}`}>
+            <div className="close-comments"><button className="close-button" onClick={this.props.closeComments}></button></div>
             <div className="comment-header">
                 <div className="comments-text">
                     <p>Comments</p>
@@ -17,9 +18,9 @@ class CommentSection extends Component {
                 </div>
             </div>
             <div className="comments-section">
-                {this.props.comments.map((comment, index) => (
+                {/* {this.props.comments.map((comment, index) => (
                     <p key={index}>{comment}</p>
-                ))}
+                ))} */}
             </div>
             <div className="add-comment">
                 <img src='./images/user/morgan-profile.png' alt="User Profile" className="profile-pic"></img>
