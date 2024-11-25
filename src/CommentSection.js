@@ -7,6 +7,7 @@ class CommentSection extends Component {
 
     render() {
         return (
+        <>
         <div className={`comments-drawer ${this.props.isCommentsOpen ? 'show-comments' : ''}`}>
             <div className="close-comments"><button className="close-button" onClick={this.props.closeComments}></button></div>
             <div className="comment-header">
@@ -49,6 +50,8 @@ class CommentSection extends Component {
                 <button onClick={this.props.handleAddComment}>Post</button>
             </div>
         </div>
+        <div className={`${this.props.isCommentsOpen ? 'comments-drawer-overlay' : ''}`}></div>
+        </>
         );
     }
 }
