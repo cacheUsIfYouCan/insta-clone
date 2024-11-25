@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import PostActions from "./PostActions";
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
-// import CommentSection from './CommentSection';
+import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
     constructor(props) {
@@ -83,7 +83,7 @@ class InstagramPost extends Component {
                     <p><strong>{this.state.caption ? this.state.userName : null}</strong>{this.state.caption}</p>
                 </div>
                 {/* Commented out entire Comment Section on the main post (Tickets  #15 & #13*/}
-                {/* <div className="comments-section">
+                <div className="comments-section">
                     <CommentSection
                         // Task 9: Pass down the necessary data and handlers used by the CommentSection component
                         comments={this.state.comments}
@@ -91,7 +91,7 @@ class InstagramPost extends Component {
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
-                </div> */}
+                </div>
             </div>
         );
     }
