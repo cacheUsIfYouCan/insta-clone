@@ -96,6 +96,11 @@
 .commentLikes > .like-button {
     font-size: 16px;
     text-align: center;
+    margin: 0;
+}
+
+.commentLikes > p {
+    font-size: 10px;
 }
 
 .username {
@@ -155,6 +160,7 @@
 
 .comments-section > p:last-of-type {
     grid-row: 1 / 2;
+    margin-top: 12px;
 }
 
 .comments-section p:nth-last-child(5) {
@@ -168,13 +174,17 @@
 
 .comments-section p:nth-last-child(6) {
     grid-row: 1 / 2;
-    margin-top: -2px;
+    margin-top: -1px;
 }
 
-.commentLikes > button:first-child {
-    margin-bottom: 30px;
+.comments-section > div:nth-child(7) {
+    margin-bottom: 70px;
 }
 
-.commentLikes > .likes {
-    margin-bottom: 20px;
+.comments-section > div:nth-child(8) {
+    margin-bottom: -30px;
+}
+
+.likes {
+    margin: 0;
 }
