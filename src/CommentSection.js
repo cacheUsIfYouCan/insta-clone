@@ -44,10 +44,8 @@ class CommentSection extends Component {
                 <input
                     type="text"
                     placeholder="Add a comment..."
-                    value={this.props.newComment}
-                    onChange={this.props.handleCommentChange}
                 />
-                <button onClick={this.props.handleAddComment}>Post</button>
+                <button>Post</button>
             </div>
         </div>
         <div className={`${this.props.isCommentsOpen ? 'comments-drawer-overlay' : ''}`}></div>

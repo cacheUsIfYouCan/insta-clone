@@ -146,6 +146,8 @@ class InstagramPost extends Component {
                         commentUsers={this.state.commentUsers}
                         commentImgURL={this.state.commentImgURL}
                         newComment={this.state.newComment}
+                        handleCommentChange={this.handleCommentChange}
+                        handleAddComment={this.handleAddComment}
                     />
                 </div>
                 <div className="post-caption">
