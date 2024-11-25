@@ -37,7 +37,6 @@ function App() {
         <Post 
           // Task 2: Pass down the data of each JSON object to this child component.
           key = {index}
-          following = {post.following}
           location = {post.location}
           shares = {post.shares}
           totalComments = {post.totalComments}
@@ -53,9 +52,8 @@ function App() {
           timestamp = {post.timestamp}
           comments = {post.comments}
           commentLikes = {post.commentLikes}
-          totalComments = {post.totalComments}
-          isVerified = {post.isVerified}
-          isUser={post.isUser}
+          commentUsers = {post.commentUsers}
+          commentImgURL = {post.commentImgURL}
           following={followingUsers[post.userName] || false}
           onFollowToggle={() => handleFollowToggle(post.userName)}
           // question here: why don't we use a semicolon to end each line?
