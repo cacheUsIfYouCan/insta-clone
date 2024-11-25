@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PostActions from "./PostActions";
 import FollowButton from './FollowButton'
 import VerifiedBadge from './VerifiedBadge'
-import CommentSection from './CommentSection';
+// import CommentSection from './CommentSection';
 import PostTimestamp from './PostTimestamp';
 import MeatballMenu from './meatball-menu';
 import Ellipsis from './ellipsis';
@@ -141,25 +141,17 @@ class InstagramPost extends Component {
                         shares={this.state.shares}
                         onLike={this.toggleLike}
                         toggleSave={this.toggleSave}
+                        comments={this.state.comments}
+                        commentLikes={this.state.commentLikes}
+                        commentUsers={this.state.commentUsers}
+                        commentImgURL={this.state.commentImgURL}
+                        newComment={this.state.newComment}
                     />
                 </div>
                 <div className="post-caption">
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
                     {this.renderCaption()}
                 </div>
-
-                {/* Commented out entire Comment Section on the main post (Tickets #15 & #13) */}
-                {/* Task 9: Pass down the necessary data and handlers used by the CommentSection component */}
-                {/* <div className="comments-section">
-
-                    <CommentSection
-                        comments={this.state.comments}
-                        newComment={this.state.newComment}
-                        handleCommentChange={this.handleCommentChange}
-                        handleAddComment={this.handleAddComment}
-                    />
-                </div> */}
-                {/* </div> */}
                 <div className="timestamp-section">
                     <PostTimestamp
                         timestamp={this.state.timestamp}

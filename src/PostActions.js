@@ -108,6 +108,11 @@ class PostActions extends Component {
                 <CommentSection
                     isCommentsOpen={this.state.isCommentsOpen}
                     closeComments={this.closeComments}
+                    comments={this.props.comments}
+                    commentLikes={this.props.commentLikes}
+                    commentUsers={this.props.commentUsers}
+                    commentImgURL={this.props.commentImgURL}
+                    newComment={this.props.newComment}
                 />
                 <ShareDrawer 
                     isOpen={this.state.isShareDrawerOpen}
