@@ -34,7 +34,7 @@ class CommentSection extends Component {
                         <button className='like-button'>
                         <i className='far fa-heart'></i>
                         </button>
-                        <p key={index}>{likes}</p>
+                        <p key={index} className="likes">{likes}</p>
                     </div>
                 ))}
             </div>
