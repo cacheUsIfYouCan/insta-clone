@@ -1,8 +1,9 @@
 // Task 3: Import the necessary component modules and/or libraries using the variables referenced below.
 import React, { Component } from 'react';
 import PostActions from "./PostActions";
-import FollowButton from './FollowButton';
-import VerifiedBadge from './VerifiedBadge';
+import FollowButton from './FollowButton'
+import VerifiedBadge from './VerifiedBadge'
+import CommentSection from './CommentSection';
 import PostTimestamp from './PostTimestamp';
 import MeatballMenu from './meatball-menu';
 import Ellipsis from './ellipsis';
@@ -144,15 +145,18 @@ class InstagramPost extends Component {
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
                     {this.renderCaption()}
                 </div>
+
                 {/* Commented out entire Comment Section on the main post (Tickets #15 & #13) */}
                 {/* Task 9: Pass down the necessary data and handlers used by the CommentSection component */}
                 {/* <div className="comments-section">
+
                     <CommentSection
                         comments={this.state.comments}
                         newComment={this.state.newComment}
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
+                </div>
                 </div> */}
                 <div className="timestamp-section">
                     <PostTimestamp

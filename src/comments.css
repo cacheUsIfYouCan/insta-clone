@@ -1,0 +1,63 @@
+.comment-drawer {
+    background-color: #F3F4F6;
+}
+
+.comment-header {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-header .comments-text {
+    display: flex;
+}
+
+.comment-header .comments-share {
+    display: flex;
+}
+
+.comments-share > .share-button {
+    justify-self: end;
+}
+
+.share-button:hover {
+    color: #999;
+}
+
+.comments-section {
+    background-color: #F3F4F6;
+}
+
+.add-comment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #dbdbdb;
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.add-comment button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-comment button:hover {
+    background-color: #007bb5;
+}
+
