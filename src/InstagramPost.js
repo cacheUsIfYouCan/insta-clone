@@ -1,11 +1,13 @@
 // Task 3: Import the necessary component modules and/or libraries using the variables referenced below.
 import React, { Component } from 'react';
 import PostActions from "./PostActions";
-import FollowButton from './FollowButton';
-import VerifiedBadge from './VerifiedBadge';
+import FollowButton from './FollowButton'
+import VerifiedBadge from './VerifiedBadge'
+import CommentSection from './CommentSection';
 import PostTimestamp from './PostTimestamp';
 import MeatballMenu from './meatball-menu';
 import Ellipsis from './ellipsis';
+
 // import CommentSection from './CommentSection';
 
 class InstagramPost extends Component {
@@ -16,6 +18,7 @@ class InstagramPost extends Component {
             following: props.following,
             shares: props.shares,
             totalComments: props.totalComments,
+            location: props.location,
             liked: props.liked,
             saved: props.saved,
             totalLikes: props.totalLikes,
@@ -27,6 +30,8 @@ class InstagramPost extends Component {
             isVerified: props.isVerified,
             timestamp: props.timestamp,
             comments: props.comments,
+            commentUsers: props.commentUsers,
+            commentImgURL: props.commentImgURL,
             newComment: '',
             isMeatballOpen: false,
             isCaptionExpanded: false
@@ -106,13 +111,16 @@ class InstagramPost extends Component {
         return (
             <div className="post">
                 <div className="post-header">
+                    
                     <img
                         src={`./images/user/${this.state.userImgURL}`}
                         alt="User Profile"
                         className="profile-pic"
                     />
-                    {/* Task 5: Make the <h2> below dynamically reference the dummy user name. */}
+                    <div classname="profile-data">
                     <h2>{this.state.userName}</h2>
+                    <p className="location">{this.state.location}</p>
+                    </div>
                     {this.state.isVerified && <VerifiedBadge />}
                     {!this.state.isUser && (
                         <FollowButton
@@ -120,7 +128,13 @@ class InstagramPost extends Component {
                             onFollowToggle={this.props.onFollowToggle}
                         />
                     )}
-                    <Ellipsis openMeatball={this.openMeatball} />
+                    {this.state.isUser && (<div className="user-follow"><FollowButton
+                            following={this.props.following}
+                            onFollowToggle={this.props.onFollowToggle}
+                        /> </div>)}
+                    <Ellipsis openMeatball={this.openMeatball}
+                    isUser={this.state.isUser}
+                     />
                 </div>
                 {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
                 <img 
@@ -144,15 +158,18 @@ class InstagramPost extends Component {
                     {/* Task 8: Make the <p> element below dynamically reference the post information. */}
                     {this.renderCaption()}
                 </div>
+
                 {/* Commented out entire Comment Section on the main post (Tickets #15 & #13) */}
                 {/* Task 9: Pass down the necessary data and handlers used by the CommentSection component */}
                 {/* <div className="comments-section">
+
                     <CommentSection
                         comments={this.state.comments}
                         newComment={this.state.newComment}
                         handleCommentChange={this.handleCommentChange}
                         handleAddComment={this.handleAddComment}
                     />
+                </div>
                 </div> */}
                 <div className="timestamp-section">
                     <PostTimestamp

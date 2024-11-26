@@ -54,6 +54,8 @@ function App() {
           comments = {post.comments}
           commentLikes = {post.commentLikes}
           totalComments = {post.totalComments}
+          commentUsers = {post.commentUsers}
+          commentImgURL = {post.commentImgURL}
           isVerified = {post.isVerified}
           isUser={post.isUser}
           following={followingUsers[post.userName] || false}

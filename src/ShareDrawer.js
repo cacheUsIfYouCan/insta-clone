@@ -30,7 +30,7 @@ class ShareDrawer extends React.Component {
         },
         {
           id: "4",
-          name: "Christina Aguilera",
+          name: "Christina Milian",
           username: "ChristmasCrunch",
           image: "/images/user/christina.jpeg",
           online: false
@@ -51,14 +51,14 @@ class ShareDrawer extends React.Component {
         },
         {
           id: "7",
-          name: "Morris Day",
+          name: "Morris Chestnut",
           username: "midnightflair217",
           image: "/images/user/morris.jpeg",
           online: false
         },
         {
           id: "8",
-          name: "Angelina Jolie",
+          name: "Angela Bassett",
           username: "queenmother",
           image: "/images/user/angie.jpeg",
           online: true
