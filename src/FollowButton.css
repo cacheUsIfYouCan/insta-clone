@@ -1,0 +1,35 @@
+.follow-button {
+    margin-left: auto;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    outline: none;
+
+
+    /* Default state (Follow) */
+    background-color: #F3F4F6;
+    color: #262626;
+}
+
+.follow-button:hover {
+    background-color: #dbdbdb;
+}
+
+/* Following state */
+.follow-button.following {
+    background-color: #efefef;
+    color: #262626;
+}
+
+.follow-button.following:hover {
+    background-color: #dbdbdb;
+}
+
+/* Optional: Add focus state for accessibility */
+.follow-button:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
