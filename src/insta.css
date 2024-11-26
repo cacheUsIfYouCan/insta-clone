@@ -1,12 +1,13 @@
+
 /* Instagram Post Layout */
 .post {
     width: 500px;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
+    /* border: 1px solid #dbdbdb;
+    border-radius: 8px; */
     margin: 20px auto;
     background-color: #fff;
     font-family: Arial, sans-serif;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
     position: relative;
 }
 
@@ -18,6 +19,12 @@
     border-bottom: 1px solid #dbdbdb;
 }
 
+
+.location {
+    margin: 0px;
+    font-size: 10px;
+}
+
 .profile-pic, .user-pic {
     width: 40px;
     height: 40px;
@@ -27,15 +34,17 @@
 }
 
 .post-header h2 {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 0px;
 }
 
 /* Main post image */
 .post-image {
     object-fit: cover;
     object-position: center center;
-    width: 500px;
+    width: 100%;
     height: 500px;
 }
 
@@ -43,7 +52,7 @@
 .post-actions {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0px, 10px, 10px, 10px;
     gap: 20px;
 }
 
@@ -51,8 +60,9 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 14px;
     color: #262626;
+    margin-bottom: 7px;
 }
 
 .liked,
@@ -60,13 +70,48 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 14px;
     color: #ed4956; /* Instagram red for like */
+    margin-bottom: 7px;
 }
-
+.liked {
+    animation: liked 0.2s linear;
+    }
+@keyframes liked {
+    0% {
+        transform: scale(.75);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% { 
+        transform: scale(1.0);
+    }
+}
+.save-button.saved {
+    color: #262626;
+    
+}
+.fas.fa-bookmark {
+    animation: saved 0.1s linear;
+}
 button.save-button {
     margin-left: auto;
+    
 }
+
+@keyframes saved {
+    0% {
+        transform: scale(.75);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% { 
+        transform: scale(1.0);
+    }
+}
+
 .share-button {
     color: #262626; /* Black comment icon */
 }
@@ -84,6 +129,50 @@ button.save-button {
     margin-bottom: 0px;
     font-size: 14px;
 }
+
+.formatted {
+    font-size: 14px;
+    margin-left: -20px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Comments section */
+/* .comments-section {
+    padding: 10px;
+    font-size: 14px;
+    color: #555;
+} */
+
+/* Comment input area */
+/* .add-comment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #dbdbdb;
+} */
+
+/* .add-comment input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+} */
+
+/* .add-comment button {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* .add-comment button:hover {
+    background-color: #007bb5;
+} */
 
 .app {
     display: grid;
@@ -116,16 +205,17 @@ button.save-button {
 .more-button:hover {
     color: #262626;
 }
-
+/* 
 @media (min-width: 1040px) {
     .app {
         grid-template-columns: 1fr 1fr;
         justify-content: space-around;
     }
-}
+} */
 
 .fa-ellipsis {
     margin-left: 20px;
+    
 }
 
 .ellipsis-btn {
@@ -136,4 +226,31 @@ button.save-button {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+.user-follow {
+        margin-left: auto;
+        padding: 6px 16px;
+        visibility:hidden;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    body {
+        width: 100vw;
+        margin: 0px;
+    }
+    .post {
+        width: 100vw;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .post-image {
+        width: 100vw;
+    }
+    .like-button:hover,
+.comment-button:hover,
+.share-button:hover,
+.save-button:hover {
+    color: #262626
+}
 }

@@ -52,8 +52,11 @@ function App() {
           timestamp = {post.timestamp}
           comments = {post.comments}
           commentLikes = {post.commentLikes}
+          totalComments = {post.totalComments}
           commentUsers = {post.commentUsers}
           commentImgURL = {post.commentImgURL}
+          isVerified = {post.isVerified}
+          isUser={post.isUser}
           following={followingUsers[post.userName] || false}
           onFollowToggle={() => handleFollowToggle(post.userName)}
           // question here: why don't we use a semicolon to end each line?

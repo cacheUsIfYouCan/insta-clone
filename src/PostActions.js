@@ -93,15 +93,15 @@ class PostActions extends Component {
                 <button onClick={this.props.onLike} className={this.props.liked ? "liked" : "like-button"}>
                     <i className={this.props.liked ? 'fas fa-heart' : 'far fa-heart'}></i>
                 </button>
-                <p>{formattedLikes}</p>
+                 <p className="formatted">{formattedLikes}</p>
                 <button className="comment-button" onClick={this.openComments}>
                     <i className="far fa-comment"></i>
                 </button>
-                <p>{formattedComments}</p>
+                <p className="formatted">{formattedComments}</p>
                 <button className="share-button" onClick={this.toggleShareDrawer}>
                     <i className="far fa-paper-plane"></i>
                 </button>
-                <p>{formattedShares}</p>
+                <p className="formatted">{formattedShares}</p>
                 <button onClick={this.props.toggleSave} className="save-button">
                     <i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i>
                 </button>
