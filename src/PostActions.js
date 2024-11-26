@@ -1,15 +1,24 @@
 import React, {Component} from 'react' 
 import ShareDrawer from './ShareDrawer';
+import CommentSection from './CommentSection';
 // Refer to the module pattern we reviewed several times in class today and debug the error of this component.
 
 class PostActions extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isShareDrawerOpen: false
+            isShareDrawerOpen: false,
+            isCommentsOpen: false
         };
     }
-    
+
+    openComments = () => {
+        this.setState({isCommentsOpen: true});
+    }
+
+    closeComments = () => {
+        this.setState({isCommentsOpen: false});
+    }
 
     toggleShareDrawer = () => {
         this.setState(prevState => ({
@@ -84,8 +93,8 @@ class PostActions extends Component {
                 <button onClick={this.props.onLike} className={this.props.liked ? "liked" : "like-button"}>
                     <i className={this.props.liked ? 'fas fa-heart' : 'far fa-heart'}></i>
                 </button>
-                <p className="formatted">{formattedLikes}</p>
-                <button className="comment-button">
+                 <p className="formatted">{formattedLikes}</p>
+                <button className="comment-button" onClick={this.openComments}>
                     <i className="far fa-comment"></i>
                 </button>
                 <p className="formatted">{formattedComments}</p>
@@ -96,7 +105,14 @@ class PostActions extends Component {
                 <button onClick={this.props.toggleSave} className="save-button">
                     <i className={this.props.saved ? 'fas fa-bookmark' : 'far fa-bookmark'}></i>
                 </button>
-
+                <CommentSection
+                    isCommentsOpen={this.state.isCommentsOpen}
+                    closeComments={this.closeComments}
+                    comments={this.props.comments}
+                    commentLikes={this.props.commentLikes}
+                    commentUsers={this.props.commentUsers}
+                    commentImgURL={this.props.commentImgURL}
+                />
                 <ShareDrawer 
                     isOpen={this.state.isShareDrawerOpen}
                     onClose={this.toggleShareDrawer}

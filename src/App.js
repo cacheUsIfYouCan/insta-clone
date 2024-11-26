@@ -37,7 +37,6 @@ function App() {
         <Post 
           // Task 2: Pass down the data of each JSON object to this child component.
           key = {index}
-          following = {post.following}
           location = {post.location}
           shares = {post.shares}
           totalComments = {post.totalComments}
